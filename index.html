@@ -299,7 +299,7 @@ Available at: https://www.pearlharboraviationmuseum.org/blog/mcdonnell-douglas-f
         return words.length;
     }
 
-    function displayTotalWordCount()
+    function displayTotalWordCount()  {
         const Introduction = countWordsInSection("Introduction_InText");
         const Historical = countWordsInSection("Historical_InText");
         const Aerodynamics = countWordsInSection("Aerodynamics_InText");
@@ -318,7 +318,7 @@ Available at: https://www.pearlharboraviationmuseum.org/blog/mcdonnell-douglas-f
             Conclusion;
 
         document.getElementById("totalWordCount").innerText =
-            `Total Word Count (Selected Sections Only): ${total}`;
+            `Total Word Count: ${total}`;
     }
 
     // Run automatically when the page loads
