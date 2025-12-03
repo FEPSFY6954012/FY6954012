@@ -210,43 +210,6 @@ Shklarsky, I. et al. (2025) ‘Leading-edge vortex controller (LEVCON) influence
 Available at: https://www.mdpi.com/1996-1073/16/15/7590
         </pre>
     </p>
-<!-- WORD COUNT DISPLAY -->
-    <div id="wordcount">Word count: 0</div>
-    <script>
-    function countWords() {
-        // IDs of sections to include in the count
-        const sections = [
-            "Introduction",
-            "HistoricalProgression",
-            "Aerodynamics",
-            "Avionics",
-            "Intelligence",
-            "CostPerformance",
-            "Conclusion"
-        ];
-
-        let totalWords = 0;
-
-        sections.forEach(id => {
-            const elem = document.getElementById(id);
-            if (elem) {
-                // Get the next sibling <p> element with class ex1
-                let contentElem = elem.nextElementSibling;
-                if (contentElem && contentElem.tagName === "P" && contentElem.classList.contains("ex1")) {
-                    const text = contentElem.innerText || contentElem.textContent;
-                    // Split by whitespace and filter out empty strings
-                    const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
-                    totalWords += wordCount;
-                }
-            }
-        });
-
-        document.getElementById("wordCount").innerText = "Word count: " + totalWords;
-    }
-
-    // Run on page load
-    window.onload = countWords;
-</script>
     <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
 <!-- Verify Button -->
